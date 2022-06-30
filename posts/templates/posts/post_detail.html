@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>post_detail</title>
+</head>
+<body>
+
+<h1> {{post.title}} </h1>
+<p>  {{post.text}}  </p>
+<a href="/posts/"> BACK TO POSTS </a>
+
+<ul>
+    {% for c in comments %}
+    <li>{{c.text}} , {{c.created_time}}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
